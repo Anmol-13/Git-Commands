@@ -1,0 +1,40 @@
+git --version
+mkdir new-repo
+cd new-repo
+git log #History
+git config -- global "Anmol" #set username
+git config user.name #check username
+git config -- global user.email "Anmol@gmail.com" #set username
+git config user.email #check email
+git init  # to intialize local repository 
+git add  file.py # to add file.py to insert file in repository
+git add . # to add all changes to repository
+git commit -m "first commit"
+git status # return name of the branch and changes in repository
+git switch newbranchname #switch to new branch
+git checkout newbranchname #switch to new branch
+git switch -c branchname #create and switch to new branch
+git checkout - b #create and switch to new branch
+git branch -d deleteme # delete branch which is commited
+git branch -D deleteme # delete branch forefully
+git branch -m changeme # change the branch name
+Step to Merge branches:
+	1.)git switch master # switch to branch
+	2.) git merge bugfix # master branch get merge with bugfix
+git branch -v #show all branch with latest commit
+git diff master..feature # compare two branches
+git diff --a/readme.txt b/readme.txt 
+git diff 4a7abwq...292jrgj #compare two commit
+git stash #git stash temporarily  stashes changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+git stash pop #  removes the changes from your stash and reapplies them to your working copy
+git stash apply #git stash apply leaves it in the stash list for possible later reuse
+git stash list #list of all stash
+git stash apply stash@{1} 
+git reset 4661ab9 #loose commit not working on that commit
+git reset --hard head~1 #undo changes and delete recent commit
+git revert "make a commit" #undo changes and make new commit
+git restore --staged secet.txt #restore file from commited
+git checkout -- filename #discharded changes in unstaged
+
+
+
